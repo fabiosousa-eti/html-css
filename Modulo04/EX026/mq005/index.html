@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/mediaQuery.css">
     <title>Midia Query - Menu</title>
 </head>
-<body>
+<body onresize="telaTamanho()">
     <header>
         <h1>Meu Site</h1>
         <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
@@ -53,6 +54,13 @@
         </article>
     </main>
     <script>
+        function telaTamanho() {
+            if(window.innerWidth >= 768){
+                itensMenu.style.display = 'block'
+            } else {
+                itensMenu.style.display = 'none'
+            }
+        }
         function clickMenu(){
             if(itensMenu.style.display == 'block') {
                 itensMenu.style.display = 'none'
