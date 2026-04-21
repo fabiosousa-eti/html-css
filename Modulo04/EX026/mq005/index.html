@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="estilos/style.css">
+    <title>Midia Query - Menu</title>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <menu id="itensMenu">
+            <ul>
+                <li>
+                    <a href="#">Opição 1</a>
+                </li>
+                <li>
+                    <a href="#">Opição 2</a>
+                </li>
+                <li>
+                    <a href="#">Opição 3</a>
+                </li>
+                <li>
+                    <a href="#">Opição 4</a>
+                </li>
+                <li>
+                    <a href="#">Opição 5</a>
+                </li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando Media Queries</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dolorum totam itaque sint! Temporibus
+                sequi nesciunt voluptas quibusdam quae eveniet optio molestiae sint fuga fugit ducimus rem facilis
+                voluptate aspernatur mollitia asperiores, itaque dolor tempore, quas nobis. Fuga voluptatibus maiores,
+                fugit, magnam nulla beatae eum et temporibus quas veniam modi ipsa, error porro corporis velit.
+                Deleniti, repudiandae officiis tempore perferendis suscipit doloribus, vel dolores asperiores quibusdam
+                labore velit fugiat vitae quasi iste. Exercitationem nihil laudantium mollitia non possimus? Tempore
+                laborum tempora rerum unde nobis autem neque corporis! Vero quidem nesciunt dicta nisi, itaque, neque
+                velit inventore laborum blanditiis veritatis consequatur ducimus doloribus reiciendis explicabo id
+                accusamus asperiores alias eum! Ut dolorum inventore eius velit explicabo numquam, maxime culpa eum
+                exercitationem accusantium mollitia est vel nulla laborum doloribus dolore provident sequi sint vitae
+                dolor! Neque voluptatum minima laborum vero eos. Dicta voluptatibus adipisci consequuntur velit,
+                distinctio molestias debitis! Et voluptates corporis, tempore doloribus dolorem id minus fugiat libero!
+                Tempora iste alias nihil necessitatibus ducimus optio suscipit neque, at sit asperiores aliquid eligendi
+                mollitia recusandae cupiditate! Sed repudiandae id pariatur aspernatur corporis at veniam aliquam, nisi
+                iure magni. Molestiae harum quisquam enim non, facilis tempore dignissimos aperiam esse nesciunt
+                laudantium quod neque?</p>
+        </article>
+    </main>
+    <script>
+        function clickMenu(){
+            if(itensMenu.style.display == 'block') {
+                itensMenu.style.display = 'none'
+            } else {
+                itensMenu.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>
