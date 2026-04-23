@@ -1,11 +1,13 @@
 @charset "UFT-8";
+
 /**/
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
     background-color: lightgrey;
@@ -13,7 +15,7 @@ body{
     width: 100vw;
 }
 
-header{
+header {
     background-color: gray;
     color: white;
     padding: 10px;
@@ -23,20 +25,21 @@ header{
     justify-content: space-between;
     align-items: center;
 }
-header > h1 {
-    border: 1px dotted black;
+
+header>h1 {
+    /*border: 1px dotted black;*/
     flex: 0 0 200px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.404);
 }
 
-header > nav {
-    border: 1px dotted black;
-    
+header>nav {
+    /*border: 1px dotted black;*/
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-end;
 }
 
-header>nav>a{
+header>nav>a {
     background-color: black;
     color: white;
     padding: 10px;
@@ -46,13 +49,13 @@ header>nav>a{
     text-align: center;
 }
 
-header>nav>a:hover{
+header>nav>a:hover {
     background-color: white;
     color: black;
     transition: background-color .5s;
 }
 
-main{
+main {
     background-color: white;
     margin: 10px;
     padding: 10px;
@@ -60,10 +63,11 @@ main{
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.336);
 }
 
-main > h2 {
-
+main>p {
+    text-align: justify;
 }
 
-main > p {
-    text-align: justify;
+footer {
+    text-align: center;
+    margin-top: 50px;
 }
